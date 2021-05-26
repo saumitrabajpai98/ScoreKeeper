@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        .winner {
+            color: green;
+        }
+
+        .loser {
+            color: red;
+        }
+        body
+        {
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+    </style>
+</head>
+<body class='p-3 mb-2 bg-dark'>
+    <div class="card row g-0 bg-secondary" style="width: 25rem;">
+        <img src="E:\VS Code Progs\Web Dev\TTimg.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h1 class='display-4'>Score Keeper</h1>
+            <h1 class='display-5'><span id='p1Display'>0</span> to <span id='p2Display'>0</span></h1>
+            <div>Select the maximum score: </div>
+            <select id='maxScore'>
+                <option value='1'>1</option>//the value gives the string format that we will use in JS
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5</option>
+                <option value='6'>6</option>
+                <option value='7'>7</option>
+                <option value='8'>8</option>
+                <option value='9'>9</option>
+                <option value='10'>10</option>
+                <option value='11'>11</option>
+                <option value='12'>12</option>
+            </select>
+            <br>
+            <br>
+            <button id='p1Button' class="btn btn-outline-warning">+>Player 1<+</button>
+            <button id='p2Button' type="button" class="btn btn-outline-warning">+>Player 2<+</button>
+            <button id='reset' type="button" class="btn btn-danger">Reset</button>
+        </div>
+    </div>
+    <script src="scorekeeper.js"></script>
+</body>
+
+</html>
